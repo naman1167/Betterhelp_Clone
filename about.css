@@ -186,3 +186,71 @@ body {
     margin: 0 auto;
     max-width: 650px;
 }
+
+.therapists-section {
+    background: #fdf8f3;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+.therapists-section h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.therapists-desc {
+    color: #333;
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto 36px auto;
+    line-height: 1.6;
+}
+
+.therapists-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.therapist-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #eee;
+    border: none;
+    box-shadow: 0 2px 8px rgba(60,80,60,0.07);
+    transition: transform 0.2s;
+}
+
+.therapist-img:hover {
+    transform: scale(1.05);
+}
+
+.get-started-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 38px;
+    border: 2px solid #4b7f4a;
+    border-radius: 30px;
+    background: #fff;
+    color: #4b7f4a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.get-started-btn:hover {
+    background: #e8f5e9;
+    color: #205c2e;
+}
+
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
