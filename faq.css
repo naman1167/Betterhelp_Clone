@@ -1,0 +1,200 @@
+body.faq-bg {
+    background: #fcfcf7;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+    color: #222;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.main-nav {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: none;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem 1.2rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.brand-name {
+    color: #4b7f4a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-left: 4px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-link {
+    color: #4b7f4a;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: color 0.2s;
+    position: relative;
+}
+.nav-link.active {
+    border-bottom: 2px solid #b7d6e6;
+    padding-bottom: 2px;
+}
+.nav-link:hover {
+    color: #2e7d32;
+}
+.nav-login {
+    color: #4b7f4a;
+    background: #fff;
+    border: 2px solid #4b7f4a;
+    border-radius: 22px;
+    padding: 0.4rem 1.2rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-login:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-color: #2e7d32;
+}
+.nav-getstarted {
+    color: #fff;
+    background: #8fd694;
+    border: none;
+    border-radius: 22px;
+    padding: 0.4rem 1.2rem;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-getstarted:hover {
+    background: #4b7f4a;
+    color: #fff;
+}
+
+/* Gradient background at the top */
+.faq-main {
+    padding-top: 110px;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #fffbe7 0%, #fcfcf7 40%);
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    color: #444;
+    letter-spacing: 0.2px;
+}
+
+.faq-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.faq-item {
+    border-bottom: 1.5px solid #e0e0e0;
+    background: transparent;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: #222;
+    text-align: left;
+    padding: 1.3rem 0.5rem 1.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.faq-question:hover {
+    background: #f7f7f7;
+}
+.faq-arrow {
+    font-size: 1.6rem;
+    margin-left: 1.2rem;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), color 0.2s;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+    color: #4b7f4a;
+}
+.faq-answer {
+    display: none;
+    padding: 2.2rem 2.5rem 2.2rem 2.5rem;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    font-size: 1.25rem;
+    color: #444;
+    font-weight: 400;
+    line-height: 1.6;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    margin-bottom: 0.5rem;
+    margin-top: -0.5rem;
+}
+.faq-item.active .faq-answer {
+    display: block;
+}
+.faq-answer p:first-child {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    color: #222;
+}
+
+@media (max-width: 700px) {
+    .faq-title {
+        font-size: 2rem;
+    }
+    .faq-accordion {
+        max-width: 98vw;
+    }
+    .faq-answer {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+        font-size: 1.05rem;
+    }
+    .faq-question {
+        font-size: 1.05rem;
+        padding: 1rem 0.2rem 1rem 0;
+    }
+}
+
+.main-footer {
+    text-align: center;
+    padding: 1.2rem 0 1.2rem 0;
+    color: #888;
+    font-size: 1rem;
+    background: none;
+}
