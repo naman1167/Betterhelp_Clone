@@ -351,6 +351,8 @@ footer {
     color: #fff;
     overflow: hidden;
     text-align: left;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .therapy-card h2 {
