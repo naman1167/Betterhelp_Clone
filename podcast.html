@@ -16,9 +16,8 @@
                 </div>
                 <div class="nav-links">
                     <a href="about.html" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Advice</a>
+                    <a href="advice.html" class="nav-link">Advice</a>
                     <a href="faq.html" class="nav-link">FAQ</a>
-                    <a href="#" class="nav-link">Therapist jobs</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                     <a href="podcast.html" class="nav-link active">Podcast</a>
                     <a href="login.html" class="nav-login">Login</a>
@@ -30,65 +29,295 @@
     </header>
     <main>
         <section class="podcast-hero">
-            <h1>Therapist-Podcast Hybrid</h1>
-            <p>
-                Real stories. Real advice. Listen to mini podcast clips where therapists share anonymous, general advice and insights from real sessions (with user permission). <br>
-                <span class="highlight">Humans of Therapy:</span> Learn and grow through the experiences of others.
-            </p>
-        </section>
-        <section class="podcast-grid-section">
-            <h2>Latest Podcast Clips</h2>
-            <div class="podcast-grid">
-                <!-- Podcast Card 1 -->
-                <div class="podcast-card">
-                    <div class="podcast-avatar">
-                        <img src="Unknown 1.jpg" alt="Therapist">
+            <div class="hero-content">
+                <h1>Therapist-Podcast Hybrid</h1>
+                <p class="hero-subtitle">
+                    Real stories. Real advice. Listen to mini podcast clips where therapists share anonymous, general advice and insights from real sessions (with user permission).
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Episodes</span>
                     </div>
-                    <div class="podcast-info">
-                        <h3>Letting Go of Perfectionism</h3>
-                        <p>Therapist: Dr. Jane Smith</p>
-                        <audio controls>
-                            <source src="podcast1.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Therapists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Downloads</span>
                     </div>
                 </div>
-                <!-- Podcast Card 2 -->
-                <div class="podcast-card">
-                    <div class="podcast-avatar">
-                        <img src="Unknown 2.jpg" alt="Therapist">
-                    </div>
-                    <div class="podcast-info">
-                        <h3>Overcoming Social Anxiety</h3>
-                        <p>Therapist: Mr. John Doe</p>
-                        <audio controls>
-                            <source src="podcast2.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
+                <div class="hero-buttons">
+                    <a href="#free-podcasts" class="hero-btn primary">Listen Free</a>
+                    <a href="#premium-podcasts" class="hero-btn secondary">Premium Episodes</a>
                 </div>
-                <!-- Podcast Card 3 -->
-                <div class="podcast-card">
-                    <div class="podcast-avatar">
-                        <img src="Unknown 3.jpg" alt="Therapist">
-                    </div>
-                    <div class="podcast-info">
-                        <h3>Building Healthy Boundaries</h3>
-                        <p>Therapist: Dr. Emily Lee</p>
-                        <audio controls>
-                            <source src="podcast3.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-               
             </div>
         </section>
+
+        <section class="featured-section">
+            <h2>Featured This Week</h2>
+            <div class="featured-podcast">
+                <div class="featured-image">
+                    <img src="Unknown 1.jpg" alt="Featured Episode">
+                    <div class="play-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <span class="featured-badge">Featured</span>
+                    <h3>Breaking the Cycle of Anxiety</h3>
+                    <p class="featured-description">
+                        Dr. Sarah Johnson shares powerful insights from her 15 years of experience helping clients overcome chronic anxiety. Learn practical techniques that have transformed thousands of lives.
+                    </p>
+                    <div class="featured-meta">
+                        <span class="duration">45 min</span>
+                        <span class="therapist">Dr. Sarah Johnson</span>
+                        <span class="category">Anxiety & Stress</span>
+                    </div>
+                    <button class="listen-btn">Listen Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="free-podcasts" class="podcast-section">
+            <div class="section-header">
+                <h2>Free Podcasts</h2>
+                <p>Start your mental health journey with these free episodes</p>
+            </div>
+            <div class="podcast-grid">
+                <div class="podcast-card free">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 1.jpg" alt="Dr. Jane Smith">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Letting Go of Perfectionism</h3>
+                            <p class="therapist-name">Dr. Jane Smith</p>
+                            <span class="duration">12 min</span>
+                        </div>
+                        <span class="free-badge">Free</span>
+                    </div>
+                    <p class="podcast-description">
+                        Learn practical strategies to overcome perfectionism and embrace imperfection in your daily life.
+                    </p>
+                    <audio controls>
+                        <source src="podcast1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="podcast-card free">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 2.jpg" alt="Mr. John Doe">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Overcoming Social Anxiety</h3>
+                            <p class="therapist-name">Mr. John Doe</p>
+                            <span class="duration">15 min</span>
+                        </div>
+                        <span class="free-badge">Free</span>
+                    </div>
+                    <p class="podcast-description">
+                        Discover effective techniques to manage social anxiety and build confidence in social situations.
+                    </p>
+                    <audio controls>
+                        <source src="podcast2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="podcast-card free">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 3.jpg" alt="Dr. Emily Lee">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Building Healthy Boundaries</h3>
+                            <p class="therapist-name">Dr. Emily Lee</p>
+                            <span class="duration">18 min</span>
+                        </div>
+                        <span class="free-badge">Free</span>
+                    </div>
+                    <p class="podcast-description">
+                        Master the art of setting and maintaining healthy boundaries in all your relationships.
+                    </p>
+                    <audio controls>
+                        <source src="podcast3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="podcast-card free">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 4.jpg" alt="Dr. Michael Chen">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Mindful Parenting</h3>
+                            <p class="therapist-name">Dr. Michael Chen</p>
+                            <span class="duration">20 min</span>
+                        </div>
+                        <span class="free-badge">Free</span>
+                    </div>
+                    <p class="podcast-description">
+                        Learn how to parent with mindfulness and create deeper connections with your children.
+                    </p>
+                    <audio controls>
+                        <source src="podcast4.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="premium-podcasts" class="podcast-section premium">
+            <div class="section-header">
+                <h2>Premium Episodes</h2>
+                <p>Dive deeper with extended sessions and exclusive content</p>
+                <div class="premium-info">
+                    <span class="premium-badge">Premium</span>
+                    <span class="premium-text">Available with BetterHelp subscription</span>
+                </div>
+            </div>
+            <div class="podcast-grid">
+                <div class="podcast-card premium">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 1.jpg" alt="Dr. Sarah Johnson">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Complete Anxiety Recovery Program</h3>
+                            <p class="therapist-name">Dr. Sarah Johnson</p>
+                            <span class="duration">75 min</span>
+                        </div>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                    <p class="podcast-description">
+                        A comprehensive guide to understanding and overcoming anxiety disorders. Includes cognitive behavioral therapy techniques, breathing exercises, and real case studies.
+                    </p>
+                    <div class="premium-content">
+                        <div class="content-preview">
+                            <h4>What you'll learn:</h4>
+                            <ul>
+                                <li>Root causes of anxiety</li>
+                                <li>CBT techniques for anxiety management</li>
+                                <li>Breathing and relaxation exercises</li>
+                                <li>Lifestyle changes for anxiety relief</li>
+                            </ul>
+                        </div>
+                        <button class="premium-btn">Unlock with Subscription</button>
+                    </div>
+                </div>
+
+                <div class="podcast-card premium">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 2.jpg" alt="Dr. Lisa Rodriguez">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Healing from Trauma</h3>
+                            <p class="therapist-name">Dr. Lisa Rodriguez</p>
+                            <span class="duration">90 min</span>
+                        </div>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                    <p class="podcast-description">
+                        A deep dive into trauma recovery, featuring EMDR techniques, narrative therapy, and healing strategies for complex PTSD.
+                    </p>
+                    <div class="premium-content">
+                        <div class="content-preview">
+                            <h4>What you'll learn:</h4>
+                            <ul>
+                                <li>Understanding trauma responses</li>
+                                <li>EMDR therapy basics</li>
+                                <li>Building resilience</li>
+                                <li>Creating a safe healing environment</li>
+                            </ul>
+                        </div>
+                        <button class="premium-btn">Unlock with Subscription</button>
+                    </div>
+                </div>
+
+                <div class="podcast-card premium">
+                    <div class="card-header">
+                        <div class="podcast-avatar">
+                            <img src="Unknown 3.jpg" alt="Dr. James Wilson">
+                        </div>
+                        <div class="podcast-meta">
+                            <h3>Couples Therapy Masterclass</h3>
+                            <p class="therapist-name">Dr. James Wilson</p>
+                            <span class="duration">120 min</span>
+                        </div>
+                        <span class="premium-badge">Premium</span>
+                    </div>
+                    <p class="podcast-description">
+                        Transform your relationship with evidence-based couples therapy techniques, communication strategies, and conflict resolution methods.
+                    </p>
+                    <div class="premium-content">
+                        <div class="content-preview">
+                            <h4>What you'll learn:</h4>
+                            <ul>
+                                <li>Effective communication patterns</li>
+                                <li>Conflict resolution strategies</li>
+                                <li>Building emotional intimacy</li>
+                                <li>Maintaining long-term connection</li>
+                            </ul>
+                        </div>
+                        <button class="premium-btn">Unlock with Subscription</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <h2>Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🧠</div>
+                    <h3>Anxiety & Stress</h3>
+                    <p>25 episodes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💔</div>
+                    <h3>Depression</h3>
+                    <p>18 episodes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">❤️</div>
+                    <h3>Relationships</h3>
+                    <p>32 episodes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family</h3>
+                    <p>15 episodes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎯</div>
+                    <h3>Self-Improvement</h3>
+                    <p>28 episodes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌙</div>
+                    <h3>Sleep & Wellness</h3>
+                    <p>12 episodes</p>
+                </div>
+            </div>
+        </section>
+
         <section class="podcast-note">
-            <p>
-                <b>Want to share your story?</b> With your permission, your experience could help others. <br>
-                <a href="contact.html" class="share-btn">Contact us to participate</a>
-            </p>
+            <div class="note-content">
+                <h3>Share Your Story</h3>
+                <p>
+                    <b>Want to help others through your experience?</b> With your permission, your story could become part of our podcast series and help thousands of people facing similar challenges.
+                </p>
+                <div class="note-buttons">
+                    <a href="contact.html" class="share-btn">Contact us to participate</a>
+                    <a href="plans.html" class="subscribe-btn">Subscribe for Premium Access</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

@@ -1,0 +1,601 @@
+body {
+    background: #fdf8f3;
+    color: #23422a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+.main-nav {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-name {
+    color: #4b7f4a;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.nav-link, .nav-login, .nav-getstarted, .nav-plans {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #23422a;
+    padding: 0.4rem 1rem;
+    border-radius: 22px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #388e3c;
+    background: #e8f5e9;
+}
+
+.nav-login {
+    border: 2px solid #4b7f4a;
+    color: #4b7f4a;
+    background: #fff;
+}
+
+.nav-login:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.nav-getstarted {
+    background: #8fd694;
+    color: #fff;
+    border: none;
+}
+
+.nav-getstarted:hover {
+    background: #4b7f4a;
+}
+
+.nav-plans {
+    color: #4b7f4a;
+    background: #fff;
+    border: 2px solid #4b7f4a;
+    border-radius: 22px;
+    padding: 0.4rem 1.2rem;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-plans:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+main {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.advice-hero {
+    background: linear-gradient(135deg, #3d5a4a 0%, #4b7f4a 100%);
+    color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.advice-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.advice-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8fd694;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Featured Tip Section */
+.featured-tip {
+    margin-bottom: 4rem;
+}
+
+.tip-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(60, 80, 60, 0.1);
+    padding: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    border-left: 5px solid #8fd694;
+}
+
+.tip-icon {
+    font-size: 3rem;
+    background: #e8f5e9;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tip-content h2 {
+    color: #23422a;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.tip-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.tip-author {
+    color: #4b7f4a;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Advice Categories */
+.advice-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.advice-category {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(60, 80, 60, 0.07);
+    padding: 2rem;
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.advice-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8fd694, #4b7f4a);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-icon {
+    font-size: 2rem;
+    background: #e8f5e9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice-category h2 {
+    color: #388e3c;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.advice-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.advice-category ul li {
+    color: #23422a;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.advice-category ul li::before {
+    content: "✓";
+    color: #8fd694;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.category-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.tip-count {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.read-more-btn {
+    background: #8fd694;
+    color: #23422a;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.read-more-btn:hover {
+    background: #4b7f4a;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.advice-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(60, 80, 60, 0.15);
+}
+
+/* Expert Tips Section */
+.expert-tips {
+    margin-bottom: 4rem;
+}
+
+.expert-tips h2 {
+    text-align: center;
+    color: #23422a;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.expert-tip-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(60, 80, 60, 0.07);
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.expert-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(60, 80, 60, 0.15);
+}
+
+.tip-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.expert-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8fd694;
+}
+
+.expert-info h3 {
+    color: #23422a;
+    font-size: 1.1rem;
+    margin: 0 0 0.3rem 0;
+}
+
+.expert-title {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.tip-content h4 {
+    color: #388e3c;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.tip-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Resources Section */
+.resources-section {
+    margin-bottom: 4rem;
+}
+
+.resources-section h2 {
+    text-align: center;
+    color: #23422a;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.resource-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(60, 80, 60, 0.07);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resource-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(60, 80, 60, 0.15);
+}
+
+.resource-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+    color: #23422a;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.resource-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.resource-link {
+    background: #8fd694;
+    color: #23422a;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.resource-link:hover {
+    background: #4b7f4a;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* Crisis Support Section */
+.crisis-support {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.crisis-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.crisis-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.crisis-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.crisis-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.crisis-btn.primary {
+    background: #fff;
+    color: #ff6b6b;
+}
+
+.crisis-btn.primary:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.crisis-btn.secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.crisis-btn.secondary:hover {
+    background: #fff;
+    color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+.crisis-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #4b7f4a;
+    background: #fdf8f3;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .advice-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        gap: 2rem;
+    }
+    
+    .tip-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .advice-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .crisis-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .advice-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tip-container {
+        padding: 1.5rem;
+    }
+    
+    .expert-tip-card {
+        padding: 1.5rem;
+    }
+}

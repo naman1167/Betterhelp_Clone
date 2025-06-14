@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | BetterHelp</title>
+    <link rel="stylesheet" href="signup1.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="Unknown.jpg" alt="BetterHelp Logo" height="36">
+                    <span class="brand-name">betterhelp</span>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="advice.html" class="nav-link">Advice</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="#" class="nav-link">Therapist jobs</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="podcast.html" class="nav-link">Podcast</a>
+                    <a href="login.html" class="nav-login">Login</a>
+                    <a href="plans.html" class="nav-plans">Plans</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="signup-container">
+            <div class="signup-left">
+                <div class="welcome-content">
+                    <h1>Start Your Journey to Better Mental Health</h1>
+                    <p class="subtitle">Join millions of people who have found support through BetterHelp's network of licensed therapists.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Licensed therapists available 24/7</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Secure, confidential sessions</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Flexible scheduling options</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Video, phone, or chat sessions</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p>"BetterHelp has been a game-changer for my mental health. My therapist is amazing and I feel supported every step of the way."</p>
+                        <span class="testimonial-author">- Sarah M., BetterHelp Member</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-right">
+                <div class="signup-form-container">
+                    <h2>Create Your Account</h2>
+                    <p class="form-subtitle">It only takes a few minutes to get started</p>
+
+                    <form id="signup-form" class="signup-form">
+                        <div class="form-step active" id="step-1">
+                            <h3>Basic Information</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password *</label>
+                                <input type="password" id="password" name="password" required>
+                                <div class="password-strength">
+                                    <div class="strength-bar">
+                                        <div class="strength-fill" id="strength-fill"></div>
+                                    </div>
+                                    <span class="strength-text" id="strength-text">Password strength</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password *</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            </div>
+
+                            <button type="button" class="next-btn" onclick="nextStep()">Continue</button>
+                        </div>
+
+                        <div class="form-step" id="step-2">
+                            <h3>Therapy Preferences</h3>
+                            
+                            <div class="form-group">
+                                <label>What type of therapy are you looking for? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="therapyType" value="individual" required>
+                                        <span class="radio-custom"></span>
+                                        Individual Therapy (for myself)
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="therapyType" value="couples" required>
+                                        <span class="radio-custom"></span>
+                                        Couples Therapy (for me and my partner)
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="therapyType" value="teen" required>
+                                        <span class="radio-custom"></span>
+                                        Teen Therapy (for my child)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>What are you seeking help with? (Select all that apply)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="concerns" value="anxiety">
+                                        <span class="checkbox-custom"></span>
+                                        Anxiety
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="concerns" value="depression">
+                                        <span class="checkbox-custom"></span>
+                                        Depression
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="concerns" value="relationships">
+                                        <span class="checkbox-custom"></span>
+                                        Relationships
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="concerns" value="stress">
+                                        <span class="checkbox-custom"></span>
+                                        Stress
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="concerns" value="trauma">
+                                        <span class="checkbox-custom"></span>
+                                        Trauma
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="concerns" value="other">
+                                        <span class="checkbox-custom"></span>
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred session time</label>
+                                <select id="preferredTime" name="preferredTime">
+                                    <option value="">Select a preference</option>
+                                    <option value="morning">Morning (8 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                                    <option value="evening">Evening (5 PM - 9 PM)</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button type="button" class="back-btn" onclick="prevStep()">Back</button>
+                                <button type="button" class="next-btn" onclick="nextStep()">Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step-3">
+                            <h3>Account Setup</h3>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timezone">Timezone</label>
+                                <select id="timezone" name="timezone">
+                                    <option value="">Select your timezone</option>
+                                    <option value="EST">Eastern Time (EST)</option>
+                                    <option value="PST">Pacific Time (PST)</option>
+                                    <option value="CST">Central Time (CST)</option>
+                                    <option value="MST">Mountain Time (MST)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    <span class="checkbox-custom"></span>
+                                    I'd like to receive helpful mental health tips and updates
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="terms" value="agree" required>
+                                    <span class="checkbox-custom"></span>
+                                    I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a> *
+                                </label>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button type="button" class="back-btn" onclick="prevStep()">Back</button>
+                                <button type="submit" class="submit-btn">Create Account</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="login-link">
+                        Already have an account? <a href="login.html">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>copyright made by Naman Sethi</p>
+    </footer>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 3;
+
+        function nextStep() {
+            if (validateCurrentStep()) {
+                if (currentStep < totalSteps) {
+                    document.getElementById(`step-${currentStep}`).classList.remove('active');
+                    currentStep++;
+                    document.getElementById(`step-${currentStep}`).classList.add('active');
+                    updateProgressBar();
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                document.getElementById(`step-${currentStep}`).classList.remove('active');
+                currentStep--;
+                document.getElementById(`step-${currentStep}`).classList.add('active');
+                updateProgressBar();
+            }
+        }
+
+        function validateCurrentStep() {
+            const currentStepElement = document.getElementById(`step-${currentStep}`);
+            const requiredFields = currentStepElement.querySelectorAll('[required]');
+            
+            for (let field of requiredFields) {
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    return false;
+                } else {
+                    field.classList.remove('error');
+                }
+            }
+
+            // Additional validation for step 1
+            if (currentStep === 1) {
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                
+                if (password !== confirmPassword) {
+                    document.getElementById('confirmPassword').classList.add('error');
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        function updateProgressBar() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.documentElement.style.setProperty('--progress', progress + '%');
+        }
+
+        // Password strength checker
+        document.getElementById('password').addEventListener('input', function() {
+            const password = this.value;
+            const strengthFill = document.getElementById('strength-fill');
+            const strengthText = document.getElementById('strength-text');
+            
+            let strength = 0;
+            let text = 'Weak';
+            
+            if (password.length >= 8) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^A-Za-z0-9]/.test(password)) strength++;
+            
+            switch(strength) {
+                case 0:
+                case 1:
+                    text = 'Weak';
+                    strengthFill.style.width = '20%';
+                    strengthFill.style.backgroundColor = '#ff6b6b';
+                    break;
+                case 2:
+                case 3:
+                    text = 'Fair';
+                    strengthFill.style.width = '60%';
+                    strengthFill.style.backgroundColor = '#ffd93d';
+                    break;
+                case 4:
+                    text = 'Good';
+                    strengthFill.style.width = '80%';
+                    strengthFill.style.backgroundColor = '#6bcf7f';
+                    break;
+                case 5:
+                    text = 'Strong';
+                    strengthFill.style.width = '100%';
+                    strengthFill.style.backgroundColor = '#4caf50';
+                    break;
+            }
+            
+            strengthText.textContent = text;
+        });
+
+        // Form submission
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (validateCurrentStep()) {
+                alert('Account created successfully! Welcome to BetterHelp.');
+                // Here you would typically send the form data to your server
+            }
+        });
+
+        // Initialize progress bar
+        updateProgressBar();
+    </script>
+</body>
+</html>

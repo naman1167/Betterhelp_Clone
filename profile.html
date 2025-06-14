@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | BetterHelp</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="Unknown.jpg" alt="BetterHelp Logo" height="36">
+                    <span class="brand-name">betterhelp</span>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="advice.html" class="nav-link">Advice</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="#" class="nav-link">Therapist jobs</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="podcast.html" class="nav-link">Podcast</a>
+                    <a href="login.html" class="nav-login">Login</a>
+                    <a href="signup.html" class="nav-getstarted">Get started</a>
+                    <a href="plans.html" class="nav-plans">Plans</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-hero">
+            <div class="hero-content">
+                <div class="user-avatar">
+                    <img src="Unknown 1.jpg" alt="User Avatar" class="avatar-img">
+                    <div class="online-status"></div>
+                </div>
+                <div class="hero-text">
+                    <h1>Welcome back, John!</h1>
+                    <p>Your mental health journey continues. Here's your progress and upcoming sessions.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Sessions Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">Progress</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Goals Achieved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-content">
+            <div class="profile-info">
+                <h2>Personal Information</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" value="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" value="Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="john.doe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" value="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="timezone">Timezone</label>
+                        <select id="timezone" name="timezone">
+                            <option value="EST">Eastern Time (EST)</option>
+                            <option value="PST">Pacific Time (PST)</option>
+                            <option value="CST">Central Time (CST)</option>
+                            <option value="MST">Mountain Time (MST)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="video-call-section">
+                <h2>Next Session</h2>
+                <div class="call-card">
+                    <div class="call-header">
+                        <div class="therapist-info">
+                            <img src="Unknown 2.jpg" alt="Dr. Jane Smith" class="therapist-avatar">
+                            <div>
+                                <h3>Dr. Jane Smith</h3>
+                                <p class="therapist-specialty">Licensed Clinical Psychologist</p>
+                            </div>
+                        </div>
+                        <div class="session-type">
+                            <span class="type-badge">Video Session</span>
+                        </div>
+                    </div>
+                    <div class="call-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📅</span>
+                            <span>December 15, 2024</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🕐</span>
+                            <span>2:00 PM - 3:00 PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏱️</span>
+                            <span>60 minutes</span>
+                        </div>
+                    </div>
+                    <div class="call-actions">
+                        <button class="join-btn">Join Call</button>
+                        <button class="reschedule-btn">Reschedule</button>
+                        <button class="cancel-btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="additional-content">
+            <div class="therapy-history">
+                <h2>Therapy History</h2>
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 8, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Session with Dr. Jane Smith</h4>
+                            <p>Discussed anxiety management techniques and practiced breathing exercises.</p>
+                            <span class="session-type-badge">Video Session</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 1, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Session with Dr. Jane Smith</h4>
+                            <p>Explored relationship patterns and set boundaries with family members.</p>
+                            <span class="session-type-badge">Video Session</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Nov 24, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Session with Dr. Jane Smith</h4>
+                            <p>Worked on stress management and identified triggers for anxiety.</p>
+                            <span class="session-type-badge">Video Session</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <h2>Your Progress</h2>
+                <div class="progress-cards">
+                    <div class="progress-card">
+                        <h3>Anxiety Level</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <p>65% improvement</p>
+                    </div>
+                    <div class="progress-card">
+                        <h3>Stress Management</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                        <p>80% improvement</p>
+                    </div>
+                    <div class="progress-card">
+                        <h3>Sleep Quality</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                        <p>70% improvement</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resources-section">
+                <h2>Recommended Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>📚 Anxiety Workbook</h3>
+                        <p>Complete exercises to manage anxiety symptoms</p>
+                        <button class="resource-btn">Access</button>
+                    </div>
+                    <div class="resource-card">
+                        <h3>🧘 Meditation Guide</h3>
+                        <p>Daily meditation practices for stress relief</p>
+                        <button class="resource-btn">Access</button>
+                    </div>
+                    <div class="resource-card">
+                        <h3>📝 Journal Prompts</h3>
+                        <p>Reflective writing exercises for self-discovery</p>
+                        <button class="resource-btn">Access</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>copyright made by Naman Sethi</p>
+    </footer>
+</body>
+</html>

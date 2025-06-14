@@ -15,83 +15,345 @@
                     <span class="brand-name">betterhelp</span>
                 </div>
                 <div class="nav-links">
-                    <a href="#" class="nav-link">Business</a>
                     <a href="about.html" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Advice</a>
+                    <a href="advice.html" class="nav-link">Advice</a>
                     <a href="faq.html" class="nav-link active">FAQ</a>
-                    <a href="#" class="nav-link">Therapist jobs</a>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="podcast.html" class="nav-link">Podcast</a>
                     <a href="login.html" class="nav-login">Login</a>
                     <a href="signup.html" class="nav-getstarted">Get started</a>
+                    <a href="plans.html" class="nav-plans">Plans</a>
                 </div>
             </div>
         </nav>
     </header>
     <main class="faq-main">
-        <h1 class="faq-title">Frequently asked questions</h1>
+        <div class="faq-hero">
+            <h1 class="faq-title">Frequently Asked Questions</h1>
+            <p class="faq-subtitle">Find answers to common questions about BetterHelp's online therapy services</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search for questions..." class="faq-search">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+
+        <div class="faq-categories">
+            <button class="category-btn active" data-category="general">General</button>
+            <button class="category-btn" data-category="therapy">Therapy</button>
+            <button class="category-btn" data-category="pricing">Pricing</button>
+            <button class="category-btn" data-category="technical">Technical</button>
+            <button class="category-btn" data-category="privacy">Privacy</button>
+        </div>
+
         <div class="faq-accordion">
-            <div class="faq-item active">
+            <!-- General Questions -->
+            <div class="faq-item active" data-category="general">
                 <button class="faq-question">
                     <span>What is BetterHelp?</span>
                     <span class="faq-arrow">&#9650;</span>
                 </button>
                 <div class="faq-answer" style="display:block;">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+                    <p>BetterHelp is the world's largest online therapy platform, providing professional mental health support through licensed therapists. We offer convenient, affordable, and private online therapy through text, phone, and video sessions. Our platform connects you with qualified therapists who can help with depression, anxiety, relationships, trauma, grief, and many other mental health concerns.</p>
+                    <p>Founded in 2013, BetterHelp has helped over 3 million people access professional mental health care from the comfort of their homes. Our mission is to make professional therapy accessible, affordable, and convenient for everyone.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>Who will be helping me?</span>
-                    <span class="faq-arrow">&#9660;</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>Who are the therapists?</span>
-                    <span class="faq-arrow">&#9660;</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How are the therapists verified?</span>
-                    <span class="faq-arrow">&#9660;</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
-                </div>
-            </div>
-            <div class="faq-item">
+
+            <div class="faq-item" data-category="general">
                 <button class="faq-question">
                     <span>Is BetterHelp right for me?</span>
                     <span class="faq-arrow">&#9660;</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+                    <p>BetterHelp is ideal for individuals seeking professional mental health support for various concerns including:</p>
+                    <ul>
+                        <li>Depression and anxiety</li>
+                        <li>Relationship issues and couples counseling</li>
+                        <li>Stress management and work-life balance</li>
+                        <li>Trauma and PTSD</li>
+                        <li>Grief and loss</li>
+                        <li>Self-esteem and confidence</li>
+                        <li>Life transitions and personal growth</li>
+                    </ul>
+                    <p>However, BetterHelp is not suitable for emergency situations, severe mental health crises, or individuals who require in-person psychiatric care. If you're experiencing a mental health emergency, please contact emergency services or call 988 immediately.</p>
                 </div>
             </div>
-            <div class="faq-item">
+
+            <div class="faq-item" data-category="general">
+                <button class="faq-question">
+                    <span>How does BetterHelp work?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Getting started with BetterHelp is simple and straightforward:</p>
+                    <ol>
+                        <li><strong>Sign Up:</strong> Complete a brief questionnaire about your needs and preferences</li>
+                        <li><strong>Get Matched:</strong> Our algorithm matches you with a licensed therapist within 24 hours</li>
+                        <li><strong>Start Therapy:</strong> Begin communicating with your therapist through text, phone, or video sessions</li>
+                        <li><strong>Continue Support:</strong> Access your therapist anytime through our secure platform</li>
+                    </ol>
+                    <p>You can switch therapists at any time if you feel the match isn't right for you. Our platform is designed to be flexible and user-friendly, allowing you to focus on your mental health journey.</p>
+                </div>
+            </div>
+
+            <!-- Therapy Questions -->
+            <div class="faq-item" data-category="therapy">
+                <button class="faq-question">
+                    <span>Who are the therapists?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>BetterHelp therapists are all licensed, trained, experienced, and accredited psychologists (PhD/PsyD), licensed marriage and family therapists (LMFT), licensed clinical social workers (LCSW), or licensed professional counselors (LPC). All therapists have a Masters Degree or a Doctorate Degree in their field.</p>
+                    <p>Our therapists have been qualified and certified by their state's professional board after successfully completing the necessary education, exams, training, and practice. They have extensive experience in providing therapy and are equipped to help with a wide range of mental health concerns.</p>
+                    <p>Each therapist is also required to have at least 3 years and 1,000 hours of hands-on experience before joining our platform.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="therapy">
+                <button class="faq-question">
+                    <span>How are the therapists verified?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>BetterHelp maintains rigorous verification standards for all therapists:</p>
+                    <ul>
+                        <li><strong>License Verification:</strong> We verify all licenses with state licensing boards</li>
+                        <li><strong>Background Checks:</strong> Comprehensive criminal background checks are performed</li>
+                        <li><strong>Education Verification:</strong> All degrees and certifications are verified</li>
+                        <li><strong>Experience Requirements:</strong> Minimum 3 years and 1,000 hours of clinical experience</li>
+                        <li><strong>Ongoing Monitoring:</strong> Regular reviews of therapist performance and client feedback</li>
+                    </ul>
+                    <p>Additionally, all therapists must complete our platform training and adhere to our professional standards and ethical guidelines. We regularly audit our verification processes to ensure the highest quality of care.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="therapy">
+                <button class="faq-question">
+                    <span>Can I choose my therapist?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you have several options for therapist selection:</p>
+                    <ul>
+                        <li><strong>Automatic Matching:</strong> Our algorithm matches you based on your questionnaire responses</li>
+                        <li><strong>Browse and Select:</strong> You can browse available therapists and choose one that fits your needs</li>
+                        <li><strong>Switch Therapists:</strong> You can change therapists at any time if the current match isn't working</li>
+                        <li><strong>Specialist Matching:</strong> Request therapists with specific specialties or approaches</li>
+                    </ul>
+                    <p>When browsing therapists, you can see their credentials, specialties, years of experience, and read their profiles to make an informed decision. Our matching system considers factors like your concerns, preferences, and therapist availability.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="therapy">
+                <button class="faq-question">
+                    <span>What types of therapy are available?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>BetterHelp offers a wide range of therapeutic approaches and specialties:</p>
+                    <div class="therapy-types">
+                        <div class="therapy-type">
+                            <h4>Approaches:</h4>
+                            <ul>
+                                <li>Cognitive Behavioral Therapy (CBT)</li>
+                                <li>Dialectical Behavior Therapy (DBT)</li>
+                                <li>Psychodynamic Therapy</li>
+                                <li>Humanistic Therapy</li>
+                                <li>Mindfulness-Based Therapy</li>
+                            </ul>
+                        </div>
+                        <div class="therapy-type">
+                            <h4>Specialties:</h4>
+                            <ul>
+                                <li>Depression and Anxiety</li>
+                                <li>Couples and Family Therapy</li>
+                                <li>Trauma and PTSD</li>
+                                <li>Addiction and Recovery</li>
+                                <li>LGBTQ+ Affirmative Therapy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Questions -->
+            <div class="faq-item" data-category="pricing">
                 <button class="faq-question">
                     <span>How much does it cost?</span>
                     <span class="faq-arrow">&#9660;</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+                    <p>BetterHelp offers transparent, affordable pricing with several subscription options:</p>
+                    <div class="pricing-options">
+                        <div class="pricing-option">
+                            <h4>Weekly Plan</h4>
+                            <p class="price">$60-90 per week</p>
+                            <p>Billed every 4 weeks</p>
+                        </div>
+                        <div class="pricing-option">
+                            <h4>Monthly Plan</h4>
+                            <p class="price">$240-360 per month</p>
+                            <p>Billed monthly</p>
+                        </div>
+                        <div class="pricing-option">
+                            <h4>Quarterly Plan</h4>
+                            <p class="price">$540-810 per quarter</p>
+                            <p>Billed every 3 months</p>
+                        </div>
+                    </div>
+                    <p><strong>What's included:</strong> Unlimited messaging with your therapist, live chat sessions, phone sessions, video sessions, and access to the BetterHelp mobile app. Pricing may vary based on your location, preferences, and therapist availability.</p>
+                    <p><strong>Financial Aid:</strong> We offer financial assistance to those who qualify. You can apply for reduced rates during the signup process.</p>
                 </div>
             </div>
-            <div class="faq-item">
+
+            <div class="faq-item" data-category="pricing">
                 <button class="faq-question">
-                    <span>Can BetterHelp substitute for traditional face-to-face therapy?</span>
+                    <span>Is BetterHelp covered by insurance?</span>
                     <span class="faq-arrow">&#9660;</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+                    <p>BetterHelp is not directly covered by most insurance plans, but there are several ways to potentially reduce your costs:</p>
+                    <ul>
+                        <li><strong>Out-of-Network Benefits:</strong> Some insurance plans offer out-of-network mental health benefits</li>
+                        <li><strong>Health Savings Accounts (HSA):</strong> You can use HSA funds to pay for BetterHelp services</li>
+                        <li><strong>Flexible Spending Accounts (FSA):</strong> FSA funds can typically be used for mental health services</li>
+                        <li><strong>Financial Aid:</strong> BetterHelp offers reduced rates for those who qualify</li>
+                    </ul>
+                    <p>We recommend contacting your insurance provider to understand your mental health benefits and out-of-network coverage. You can also speak with your BetterHelp therapist about obtaining a receipt for potential reimbursement.</p>
                 </div>
+            </div>
+
+            <!-- Technical Questions -->
+            <div class="faq-item" data-category="technical">
+                <button class="faq-question">
+                    <span>What devices and browsers are supported?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>BetterHelp is designed to work across multiple platforms and devices:</p>
+                    <div class="tech-support">
+                        <div class="tech-section">
+                            <h4>Mobile Apps:</h4>
+                            <ul>
+                                <li>iOS (iPhone/iPad) - iOS 12.0 or later</li>
+                                <li>Android - Android 6.0 or later</li>
+                                <li>Available on App Store and Google Play</li>
+                            </ul>
+                        </div>
+                        <div class="tech-section">
+                            <h4>Web Browsers:</h4>
+                            <ul>
+                                <li>Chrome (recommended)</li>
+                                <li>Firefox</li>
+                                <li>Safari</li>
+                                <li>Edge</li>
+                            </ul>
+                        </div>
+                        <div class="tech-section">
+                            <h4>System Requirements:</h4>
+                            <ul>
+                                <li>Stable internet connection</li>
+                                <li>Camera and microphone for video sessions</li>
+                                <li>Minimum 2GB RAM</li>
+                                <li>Modern browser with JavaScript enabled</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="technical">
+                <button class="faq-question">
+                    <span>How do video sessions work?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Video sessions on BetterHelp are designed to be simple and secure:</p>
+                    <ol>
+                        <li><strong>Schedule:</strong> Your therapist will schedule video sessions based on your availability</li>
+                        <li><strong>Join:</strong> Click the video session link in your BetterHelp account at the scheduled time</li>
+                        <li><strong>Connect:</strong> The session runs through our secure, HIPAA-compliant platform</li>
+                        <li><strong>Privacy:</strong> Sessions are encrypted and not recorded</li>
+                    </ol>
+                    <p><strong>Tips for successful video sessions:</strong></p>
+                    <ul>
+                        <li>Find a quiet, private space</li>
+                        <li>Test your camera and microphone beforehand</li>
+                        <li>Ensure stable internet connection</li>
+                        <li>Have a backup plan (phone session) if needed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Privacy Questions -->
+            <div class="faq-item" data-category="privacy">
+                <button class="faq-question">
+                    <span>Is BetterHelp private and secure?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, BetterHelp prioritizes your privacy and security with multiple layers of protection:</p>
+                    <div class="privacy-features">
+                        <div class="privacy-section">
+                            <h4>Security Measures:</h4>
+                            <ul>
+                                <li>256-bit SSL encryption for all data</li>
+                                <li>HIPAA-compliant platform</li>
+                                <li>Secure data centers with 24/7 monitoring</li>
+                                <li>Regular security audits and updates</li>
+                            </ul>
+                        </div>
+                        <div class="privacy-section">
+                            <h4>Privacy Protections:</h4>
+                            <ul>
+                                <li>Your information is never sold to third parties</li>
+                                <li>Anonymous payment processing</li>
+                                <li>Optional anonymous messaging</li>
+                                <li>You control what information you share</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Your conversations with your therapist are confidential, with limited exceptions for safety concerns (suicidal thoughts, harm to others, or abuse). We maintain strict confidentiality standards and comply with all applicable privacy laws.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="privacy">
+                <button class="faq-question">
+                    <span>What information do you collect?</span>
+                    <span class="faq-arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>BetterHelp collects only the information necessary to provide you with therapy services:</p>
+                    <div class="data-collection">
+                        <div class="data-section">
+                            <h4>Required Information:</h4>
+                            <ul>
+                                <li>Name and contact information</li>
+                                <li>Payment information (processed securely)</li>
+                                <li>Basic demographic information</li>
+                                <li>Mental health questionnaire responses</li>
+                            </ul>
+                        </div>
+                        <div class="data-section">
+                            <h4>Optional Information:</h4>
+                            <ul>
+                                <li>Profile photo</li>
+                                <li>Additional personal details</li>
+                                <li>Emergency contact information</li>
+                                <li>Insurance information (for potential reimbursement)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>We use this information solely to provide therapy services, match you with appropriate therapists, and ensure the quality of care. You can review and update your information at any time through your account settings.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <h2>Still have questions?</h2>
+            <p>Our support team is here to help you get the answers you need.</p>
+            <div class="contact-options">
+                <a href="contact.html" class="contact-btn primary">Contact Support</a>
+                <a href="mailto:support@betterhelp.com" class="contact-btn secondary">Email Us</a>
             </div>
         </div>
     </main>
@@ -101,3 +363,15 @@
     <script src="faq.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
