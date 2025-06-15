@@ -18,7 +18,7 @@
                     <a href="about.html" class="nav-link">About</a>
                     <a href="advice.html" class="nav-link">Advice</a>
                     <a href="faq.html" class="nav-link">FAQ</a>
-                    <a href="#" class="nav-link">Therapist jobs</a>
+
                     <a href="contact.html" class="nav-link">Contact</a>
                     <a href="podcast.html" class="nav-link">Podcast</a>
                     <a href="login.html" class="nav-login">Login</a>
@@ -335,16 +335,15 @@
             strengthText.textContent = text;
         });
 
-        // Form submission
+
         document.getElementById('signup-form').addEventListener('submit', function(e) {
             e.preventDefault();
             if (validateCurrentStep()) {
                 alert('Account created successfully! Welcome to BetterHelp.');
-                // Here you would typically send the form data to your server
             }
         });
 
-        // Initialize progress bar
+
         updateProgressBar();
     </script>
 </body>
