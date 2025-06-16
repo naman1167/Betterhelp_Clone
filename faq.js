@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const answer = this.nextElementSibling;
             const arrow = this.querySelector('.faq-arrow');
             
-            // Close all other FAQ items
+            // Close all other FAQ items  
             faqItems.forEach(item => {
                 if (item !== faqItem) {
                     item.classList.remove('active');
