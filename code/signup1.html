@@ -339,7 +339,8 @@
         document.getElementById('signup-form').addEventListener('submit', function(e) {
             e.preventDefault();
             if (validateCurrentStep()) {
-                alert('Account created successfully! Welcome to BetterHelp.');
+                // Redirect to profile page
+                window.location.href = 'profile.html';
             }
         });
 

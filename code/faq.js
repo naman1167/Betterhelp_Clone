@@ -252,3 +252,5 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(animationStyle);
 }); 
+
+

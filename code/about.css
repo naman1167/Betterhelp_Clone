@@ -145,7 +145,6 @@ body {
     transition: color 0.2s;
     position: relative;
 }
-
 .tab.active {
     color: #b6e6a7;
     font-weight: 700;
